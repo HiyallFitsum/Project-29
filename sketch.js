@@ -28,7 +28,7 @@ function setup() {
   block8 = new Block(490, 285, 30, 40);
   //block9 = new Block(395, 285, 30, 40);
   
-  fill("red");
+  
   block10 = new Block(310, 245, 30, 40);
   block11 = new Block(340, 245, 30, 40);
   block12 = new Block(370, 245, 30, 40);
@@ -37,17 +37,16 @@ function setup() {
   block15 = new Block(460, 245, 30, 40);
  // block16 = new Block(385, 255, 30, 40);
 
-  fill("green");
+  
   block17 = new Block(340, 205, 30, 40);
   block18 = new Block(370, 205, 30, 40);
   block19 = new Block(400, 205, 30, 40);
   block20 = new Block(430, 205, 30, 40);
  // block21 = new Block(355, 235, 30, 40);
 
-  fill("blue");
+  
   block22 = new Block(390, 165, 30, 40);
 
-  fill("red");
   block23 = new Block(380, 530, 30, 40);
   block24 = new Block(410, 530, 30, 40);
   block25 = new Block(440, 530, 30, 40);
@@ -55,18 +54,16 @@ function setup() {
   block27 = new Block(500, 530, 30, 40);
   block28 = new Block(530, 530, 30, 40);
 
-  fill("blue");
+
   block29 = new Block(410, 490, 30, 40);
   block30 = new Block(440, 490, 30, 40);
   block31 = new Block(470, 490, 30, 40);
   block32 = new Block(500, 490, 30, 40);
 
-  fill("green");
   block33 = new Block(460, 450, 30, 40);
 
   ground = new Ground(width/2,height-20,width,10);
 
-  fill("gray");
   slingShot = new SlingShot(object.body, {x:100,y:200})
 
 }
@@ -81,6 +78,7 @@ function draw() {
 
   object.display();
 
+
   block1.display();
   block2.display();
   block3.display();
@@ -90,6 +88,8 @@ function draw() {
   block7.display();
   block8.display();
  // block9.display();
+ 
+  fill("red");
   block10.display();
   block11.display();
   block12.display();
@@ -97,13 +97,18 @@ function draw() {
   block14.display();
   block15.display();
   //block16.display();
+
+  fill("green");
   block17.display();
   block18.display();
   block19.display();
   block20.display();
   //block21.display();
+
+  fill("blue");
   block22.display();
 
+  fill("red");
   block23.display();
   block24.display();
   block25.display();
@@ -111,11 +116,15 @@ function draw() {
   block27.display();
   block28.display();
   //block16.display();
+
+  fill("blue");
   block29.display();
   block30.display();
   block31.display();
   block32.display();
   //block21.display();
+
+  fill("green");
   block33.display();
 
   ground.display();
